@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <!-- Linking a CSS file -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/Chatbot_CSS.css') }}">
+</head>
+<body>
+    <!--h2 id="heading">My Chatbot</h2-->
+    <div id="chat-box">
+             <div id="chat-header">Chat Assistant</div>
+			<div id="chat-display-area">
+				<div id="chat-messages">
+                    <div class="message bot">
+                      <img src="{{ url_for('static', filename='chatbot_image.png') }}" alt="Bot Icon">
+                      <span>Hi! How may I help you?</span>
+                    </div>
+                  </div>
+			</div>
+			<div id="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Type your message">
+                <button id="send-btn" onclick="sendMessage()">Send</button>
+			</div>
+        </div>
+    </div>
+    
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
