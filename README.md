@@ -7,15 +7,15 @@ This is a simple web-based chatbot application built using **Flask** as the back
 ### 🔧 Technologies Used
 
 - **Backend:** Python, Flask
-- **Frontend:** HTML5, CSS3, JavaScript
-- **AI Model:** Gemini API (Google Generative AI)
+- **Frontend:** HTML, CSS, JavaScript
+- **AI Model:** Gemini API `gemini-2.0-flash`
 - **Others:** dotenv for API key management
 
 ---
 
 ### 📸 Project Screenshot
 
-![Chatbot UI](static/Chatbot_Frontend.png)
+![Chatbot UI](static/Chatbot_Frontend.PNG)
 
 ---
 
