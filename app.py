@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 API_KEY = os.getenv("LLM_API_KEY")  # Store it in .env or directly paste for now. pip install python-dotenv
 
-genai.configure(api_key=API_KEY)
+genai.configure(api_key=API_KEY, transport='rest')
 model = genai.GenerativeModel("gemini-2.0-flash")
 
 # Shared chat session (memory) for the app
